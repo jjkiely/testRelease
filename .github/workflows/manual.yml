@@ -27,7 +27,7 @@ jobs:
       runs-on: ubuntu-latest
       name: Create Release
       steps:
-        - uses: ncipollo/release-action@v1.11.1
+        - uses: softprops/action-gh-release@v1
           with:
-           commit: ${{ inputs.commit }}
-           tag: ${{ inputs.tag }}
+           tag_name: ${{ inputs.tag }}
+           target_commitish: ${{ inputs.commit }}
