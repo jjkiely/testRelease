@@ -27,7 +27,7 @@ jobs:
       runs-on: ubuntu-latest
       name: Create Release
       steps:
-        -uses: ncipollo/release-action@v1.11.1
-         with:
+        - uses: ncipollo/release-action@v1.11.1
+          with:
            commit: ${{ inputs.commit }}
            tag: ${{ inputs.tag }}
